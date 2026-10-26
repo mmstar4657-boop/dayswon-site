@@ -1,7 +1,7 @@
 /* DaysWon chat assistant — scripted FAQ + inquiry form + human handoff. No third-party AI. */
 (function(){
 "use strict";
-var API="https://dayswon.sites.tab.bot/api/lead", FALLBACK_MAIL="mendels-tab+dayswon@mail.tab.bot";
+var API="https://dayswon.sites.tab.bot/api/lead", FALLBACK_MAIL="hello@dayswon.com";
 /* Live chat (tawk.to, free plan). Loaded only when a visitor asks for a person, so the page shows
    one chat bubble at a time: ours first, then tawk takes over (our launcher hides, tawk opens). */
 var TAWK_SRC="https://embed.tawk.to/6ad218e0c724b834c3da83da/1k52b2bgm", LIVE_KEY="dw_live";
