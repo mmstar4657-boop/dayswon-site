@@ -28,7 +28,7 @@
       <a class="link" href="proof.html">Proof</a>
       <a class="link" href="about.html">About</a>
       <a class="link" href="faq.html">FAQ</a>
-      <a class="btn btn-gold" href="contact.html" aria-current="page">Book a call</a>
+      <a class="btn btn-gold" href="contact.html#form" aria-current="page">Book a call</a>
       <button class="menu-btn" id="menu-btn" type="button" aria-expanded="false" aria-controls="mpanel" aria-label="Open menu"><span></span><span></span><span></span></button>
     </nav>
   </div>
@@ -43,8 +43,8 @@
       <h1 id="call-h" class="split">Let's talk about where your time is going.</h1>
       <p class="lede">Book a short call. We'll listen, ask a few questions, and give you an honest answer on whether AI can help.</p>
       <div class="actions">
-        <a class="btn btn-gold" href="mailto:hello@dayswon.com?subject=Intro%20call">Book a call <span class="arr" aria-hidden="true">&rarr;</span></a>
-        <span class="email">or email <b>hello@dayswon.com</b></span>
+        <a class="btn btn-gold" href="#form">Book a call <span class="arr" aria-hidden="true">&rarr;</span></a>
+        <span class="email">or email <a href="mailto:hello@dayswon.com?subject=Intro%20call"><b>hello@dayswon.com</b></a></span>
       </div>
     </div>
     <div class="agenda" id="agenda">
@@ -58,7 +58,38 @@
   </div>
 </section>
 
-
+<section class="alt form-sec" id="form" aria-labelledby="form-h">
+  <div class="wrap form-grid">
+    <div class="form-intro reveal">
+      <span class="label">Book a call</span>
+      <h2 id="form-h">Tell us a little about your business.</h2>
+      <p class="lede">Share what you need and we'll reply by email to set up a short call.</p>
+      <p class="form-alt">Prefer email? Write to <a href="mailto:hello@dayswon.com?subject=Intro%20call">hello@dayswon.com</a></p>
+    </div>
+    <div class="form-card reveal">
+      <form class="lead-form" id="lead-form" novalidate>
+        <div class="f-row">
+          <div class="field"><label for="f-name">Your name <span aria-hidden="true">*</span></label><input id="f-name" name="name" type="text" required autocomplete="name" maxlength="120"></div>
+          <div class="field"><label for="f-email">Work email <span aria-hidden="true">*</span></label><input id="f-email" name="email" type="email" required autocomplete="email" inputmode="email" maxlength="200"></div>
+        </div>
+        <div class="f-row">
+          <div class="field"><label for="f-company">Company</label><input id="f-company" name="company" type="text" autocomplete="organization" maxlength="160"></div>
+          <div class="field"><label for="f-service">What can we help with?</label><div class="select"><select id="f-service" name="service"><option>Custom software</option><option>AI automation</option><option>ERP / business platform</option><option>Website / digital experience</option><option>Not sure yet</option></select></div></div>
+        </div>
+        <div class="field"><label for="f-message">Tell us about your project <span aria-hidden="true">*</span></label><textarea id="f-message" name="message" required minlength="10" maxlength="4000" rows="5" placeholder="What are you trying to build or improve?"></textarea></div>
+        <div class="hp" aria-hidden="true"><label for="f-website">Website</label><input id="f-website" name="website" type="text" tabindex="-1" autocomplete="off"></div>
+        <div class="f-msg f-err" id="f-err" role="alert" hidden></div>
+        <button class="btn btn-gold f-submit" type="submit">Send inquiry <span class="arr" aria-hidden="true">&rarr;</span></button>
+        <p class="f-note">Your details are used only to reply to your inquiry.</p>
+      </form>
+      <div class="f-done" id="f-done" role="status" hidden>
+        <span class="tick" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 14 14"><path d="M3 7.5l2.5 2.5L11 4.5" fill="none" stroke="#0a1226" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        <h3>Inquiry sent</h3>
+        <p id="f-done-text">Thank you. Your inquiry is in, and we'll reply with next steps.</p>
+      </div>
+    </div>
+  </div>
+</section>
 
 </main>
 
@@ -76,5 +107,6 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
 <script src="site.js"></script>
+<script src="form.js"></script>
 </body>
 </html>
