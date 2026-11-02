@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#0a1226">
+<title>Dashboards & automations | DaysWon</title>
+<meta name="description" content="Live dashboards that show your whole business at a glance, and automations that handle the routine work behind them.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon-32.png" type="image/png" sizes="32x32">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="progress" id="progress" aria-hidden="true"></div>
+
+<header class="top" id="top-bar">
+  <div class="wrap">
+    <a class="brand" href="index.html" aria-label="DaysWon home"><span class="brand-mark" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24"><path d="M7 4h5.5a7.5 7.5 0 010 16H7V4z" fill="none" stroke="#fff" stroke-width="2.4" stroke-linejoin="round"/><path d="M9.5 12.2l2.2 2.2 3.8-4.2" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>DaysWon</a>
+    <nav class="nav" aria-label="Main">
+      <a class="link" href="what-we-do.html">What we do</a>
+      <a class="link" href="dashboards-automations.html" aria-current="page">Dashboards &amp; automations</a>
+      <a class="link" href="how-we-work.html">How we work</a>
+      <a class="link" href="proof.html">Proof</a>
+      <a class="link" href="about.html">About</a>
+      <a class="link" href="faq.html">FAQ</a>
+      <a class="btn btn-gold" href="contact.html">Book a call</a>
+      <button class="menu-btn" id="menu-btn" type="button" aria-expanded="false" aria-controls="mpanel" aria-label="Open menu"><span></span><span></span><span></span></button>
+    </nav>
+  </div>
+  <nav class="mpanel" id="mpanel" aria-label="Mobile"><a href="index.html">Home</a><a href="what-we-do.html">What we do</a><a href="dashboards-automations.html" aria-current="page">Dashboards &amp; automations</a><a href="how-we-work.html">How we work</a><a href="proof.html">Proof</a><a href="about.html">About</a><a href="faq.html">FAQ</a><a href="contact.html">Contact</a></nav>
+</header>
+
+<main id="main">
+
+<section class="page-hero" aria-labelledby="page-h">
+  <div class="hero-art" aria-hidden="true">
+    <svg id="orbits" viewBox="0 0 1440 800" preserveAspectRatio="xMidYMid slice">
+      <defs>
+        <radialGradient id="core" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#7b5cff" stop-opacity=".45"/><stop offset="1" stop-color="#7b5cff" stop-opacity="0"/></radialGradient>
+      </defs>
+      <circle cx="720" cy="400" r="330" fill="url(#core)"/>
+      <g transform="translate(720 400) rotate(-16)"><g class="spin" style="animation-duration:120s">
+        <ellipse rx="660" ry="190" fill="none" stroke="#e5c58c" stroke-opacity=".55" stroke-width="1.6"/>
+        <circle r="7" fill="#e5c58c"><animateMotion dur="22s" repeatCount="indefinite" path="M-660,0 a660,190 0 1,0 1320,0 a660,190 0 1,0 -1320,0"/></circle>
+      </g></g>
+      <g transform="translate(720 400) rotate(22)"><g class="spin" style="animation-duration:150s;animation-direction:reverse">
+        <ellipse rx="610" ry="240" fill="none" stroke="#548eff" stroke-opacity=".55" stroke-width="1.6"/>
+        <circle r="6" fill="#548eff"><animateMotion dur="18s" repeatCount="indefinite" path="M-610,0 a610,240 0 1,0 1220,0 a610,240 0 1,0 -1220,0"/></circle>
+        <circle r="4" fill="#9fc0ff"><animateMotion dur="18s" begin="-9s" repeatCount="indefinite" path="M-610,0 a610,240 0 1,0 1220,0 a610,240 0 1,0 -1220,0"/></circle>
+      </g></g>
+      <g transform="translate(720 400) rotate(64)"><g class="spin" style="animation-duration:100s">
+        <ellipse rx="520" ry="150" fill="none" stroke="#a47bff" stroke-opacity=".6" stroke-width="1.6"/>
+        <circle r="6" fill="#a47bff"><animateMotion dur="15s" repeatCount="indefinite" path="M-520,0 a520,150 0 1,0 1040,0 a520,150 0 1,0 -1040,0"/></circle>
+      </g></g>
+      <g transform="translate(720 400) rotate(-52)"><g class="spin" style="animation-duration:170s;animation-direction:reverse">
+        <ellipse rx="720" ry="130" fill="none" stroke="#5fd0c2" stroke-opacity=".45" stroke-width="1.4"/>
+        <circle r="5" fill="#5fd0c2"><animateMotion dur="26s" repeatCount="indefinite" path="M-720,0 a720,130 0 1,0 1440,0 a720,130 0 1,0 -1440,0"/></circle>
+      </g></g>
+      <g transform="translate(720 400) rotate(6)"><g class="spin" style="animation-duration:130s">
+        <ellipse rx="460" ry="270" fill="none" stroke="#ff9a82" stroke-opacity=".38" stroke-width="1.2"/>
+        <circle r="5" fill="#ff9a82"><animateMotion dur="20s" begin="-6s" repeatCount="indefinite" path="M-460,0 a460,270 0 1,0 920,0 a460,270 0 1,0 -920,0"/></circle>
+      </g></g>
+    </svg>
+  </div>
+  <div class="hero-inner hero-copy">
+    <span class="label">Dashboards &amp; automations</span>
+    <h1 id="page-h" class="split">See your whole business at a glance. Let routine work run itself.</h1>
+    <p class="lede">Dashboards show what's happening in your business right now. Automations handle the repetitive work behind it. Together, they give you clarity and time.</p>
+  </div>
+</section>
+
+<section aria-labelledby="dash-h">
+  <div class="wrap da-grid">
+    <div class="reveal">
+      <span class="label">Dashboards</span>
+      <h2 id="dash-h">All your key numbers in one place.</h2>
+      <p class="lede">Stop searching through inboxes, spreadsheets and apps for answers. One screen shows how the business is doing.</p>
+      <ul class="benefits">
+        <li><b>Everything in one view.</b> Sales, jobs, invoices and follow-ups, pulled from the tools you already use.</li>
+        <li><b>Updates automatically.</b> No more copying numbers into spreadsheets by hand.</li>
+        <li><b>Problems surface early.</b> Overdue invoices, stalled leads and slipping jobs get flagged before they cost you.</li>
+        <li><b>Built around your questions.</b> We design it for the decisions you actually make, not a wall of charts.</li>
+      </ul>
+    </div>
+    <div class="reveal"><figure class="dash-wrap">
+  <div class="dash" role="img" aria-label="Example business dashboard with illustrative numbers: open invoices, new leads, jobs on schedule, weekly revenue and alerts">
+    <div class="dash-top"><span class="dots" aria-hidden="true"><i></i><i></i><i></i></span><span class="dash-title">Business overview</span><span class="live"><i></i>Live</span></div>
+    <div class="kpis">
+      <div class="kpi"><small>Open invoices</small><b data-count="12480" data-prefix="$">$12,480</b><em class="warn">3 overdue</em></div>
+      <div class="kpi"><small>New leads this week</small><b data-count="37">37</b><em class="good">+9 vs last week</em></div>
+      <div class="kpi"><small>Jobs on schedule</small><b data-count="92" data-suffix="%">92%</b><em>2 need attention</em></div>
+    </div>
+    <div class="dash-mid">
+      <div class="panel-c"><small>Revenue by week</small><div class="bars"><span style="height:38%"></span><span style="height:52%"></span><span style="height:46%"></span><span style="height:61%"></span><span style="height:57%"></span><span style="height:70%"></span><span style="height:66%"></span><span style="height:84%"></span></div>
+        <svg class="spark" viewBox="0 0 200 40" preserveAspectRatio="none" aria-hidden="true"><path d="M2 34 L28 28 L54 30 L80 22 L106 24 L132 14 L158 17 L198 5" fill="none" stroke="#e5c58c" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+      <div class="panel-c alerts"><small>Needs you</small>
+        <ul><li><i class="r"></i>3 invoices overdue, reminders sent</li><li><i class="y"></i>2 leads waiting over a day</li><li><i class="g"></i>Weekly report ready</li></ul>
+      </div>
+    </div>
+  </div>
+  <figcaption class="dash-cap">Example dashboard. Illustrative numbers.</figcaption>
+</figure></div>
+  </div>
+</section>
+
+<section class="alt" aria-labelledby="auto-h">
+  <div class="wrap">
+    <div class="center reveal">
+      <span class="label">Automations</span>
+      <h2 id="auto-h">Automations that run in the background.</h2>
+      <p class="lede">They take repetitive steps off your plate and bring you in only when a decision is needed.</p>
+    </div>
+    <div class="flow reveal" id="flow" role="img" aria-label="Example automation: a new lead arrives, gets an instant reply, is logged in your CRM, and you get a summary">
+      <div class="flow-line" aria-hidden="true"><span class="flow-fill"></span></div>
+      <div class="fnode"><span class="fic" aria-hidden="true"><svg viewBox="0 0 24 24" width="24" height="24"><path d="M4 6h16v12H4z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M4 7l8 6 8-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span><b>New lead arrives</b><small>From your form, email or phone</small></div><div class="fnode"><span class="fic" aria-hidden="true"><svg viewBox="0 0 24 24" width="24" height="24"><path d="M4 5h16v10H9l-5 4V5z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg></span><b>Instant reply</b><small>In your voice, within minutes</small></div><div class="fnode"><span class="fic" aria-hidden="true"><svg viewBox="0 0 24 24" width="24" height="24"><rect x="4" y="4" width="16" height="16" rx="3" fill="none" stroke="currentColor" stroke-width="2"/><path d="M4 10h16M10 10v10" stroke="currentColor" stroke-width="2"/></svg></span><b>Logged in your CRM</b><small>No retyping, no missed details</small></div><div class="fnode"><span class="fic" aria-hidden="true"><svg viewBox="0 0 24 24" width="24" height="24"><path d="M5 12.5l4.5 4.5L19 7" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span><b>You get a summary</b><small>Ready for you to follow up</small></div>
+    </div>
+    <div class="exgrid" data-stagger><div class="excard"><h3>Quote follow-up</h3><ol class="steps-mini"><li>Quote goes out</li><li>Friendly check-in on day 2</li><li>Second follow-up on day 5</li><li>Replies come straight to you</li></ol></div><div class="excard"><h3>Invoice to paid</h3><ol class="steps-mini"><li>Job is marked done</li><li>Invoice is drafted</li><li>You approve it</li><li>Sent and tracked, with polite reminders</li></ol></div><div class="excard"><h3>Appointments</h3><ol class="steps-mini"><li>Booking comes in</li><li>Confirmation sent</li><li>Reminder the day before</li><li>Easy link to reschedule</li></ol></div></div>
+    <p class="excap reveal">These are examples. Every automation is designed around your business.</p>
+  </div>
+</section>
+
+<section aria-labelledby="tog-h">
+  <div class="wrap">
+    <div class="center reveal"><h2 id="tog-h">Better together</h2><p class="lede">Each is valuable on its own. Together, they work as one system.</p></div>
+    <div class="teasers" data-stagger>
+      <div class="tcard static"><span class="tnum">1</span><h3>The dashboard shows the problem</h3><p>You see exactly where time and money slip away.</p></div>
+      <div class="tcard static"><span class="tnum">2</span><h3>An automation fixes it</h3><p>The repetitive work behind it now runs on its own.</p></div>
+      <div class="tcard static"><span class="tnum">3</span><h3>The dashboard confirms it</h3><p>You see the improvement in your numbers.</p></div>
+    </div>
+    <ul class="trust reveal" aria-label="How we build">
+      <li>Built on your tools</li><li>You approve what matters</li><li>Only what saves time or money</li>
+    </ul>
+  </div>
+</section>
+
+
+<section class="final" aria-labelledby="final-h">
+  <div class="wrap reveal">
+    <h2 id="final-h">Picture your business on one screen.</h2>
+    <p class="lede">Book a short call and we'll sketch what your first dashboard and automation could look like.</p>
+    <div class="actions"><a class="btn btn-gold" href="contact.html">Book a call <span class="arr" aria-hidden="true">&rarr;</span></a></div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap foot">
+    <div>
+      <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24"><path d="M7 4h5.5a7.5 7.5 0 010 16H7V4z" fill="none" stroke="#fff" stroke-width="2.4" stroke-linejoin="round"/><path d="M9.5 12.2l2.2 2.2 3.8-4.2" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>DaysWon</a>
+      <p style="margin-top:10px">Win back your days.</p>
+    </div>
+    <nav aria-label="Footer"><a href="what-we-do.html">What we do</a><a href="dashboards-automations.html">Dashboards &amp; automations</a><a href="how-we-work.html">How we work</a><a href="proof.html">Proof</a><a href="about.html">About</a><a href="faq.html">FAQ</a><a href="contact.html">Contact</a></nav>
+    <div class="fr"><p>hello@dayswon.com</p><p>&copy; 2026 DaysWon</p></div>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="site.js"></script>
+</body>
+</html>
